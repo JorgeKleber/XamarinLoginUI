@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinLoginUI.UI.Renderers"
+             BackgroundImageSource="background"
+             x:Class="XamarinLoginUI.View.MainPage">
+
+    <Grid>
+
+        <StackLayout Margin="30,0,0,0"
+                     TranslationY="100">
+            <Label Text="Let's Go"
+                   FontFamily="CustomFont"
+                   FontSize="50"/>
+            <Label Text="Traveling arround the world"
+                   FontFamily="CustomFont"
+                   FontSize="20"/>
+        </StackLayout>
+
+        <StackLayout VerticalOptions="Center"
+                     Margin="30">
+            <local:PersonalEntry Placeholder="Ex.: kleber@email.com"
+                                 PlaceholderColor="#B9B9B9"
+                                 ClearButtonVisibility="WhileEditing"/>
+            <local:PersonalEntry Placeholder="Your password here"
+                                 IsPassword="True"
+                                 ClearButtonVisibility="WhileEditing"
+                                 PlaceholderColor="#B9B9B9"/>
+            <local:PersonalButton Text="Login"
+                                  TextColor="#B9B9B9"/>
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal"
+                     VerticalOptions="End"
+                     HorizontalOptions="Center"
+                     Margin="30,30,30,100">
+            
+            <Label Text="Create Account" Margin="0,0,10,0" VerticalTextAlignment="Center"/>
+            <Label Text="|" FontSize="Large" />
+            <Label Text="Forguet Password" Margin="10,0,0,0" VerticalTextAlignment="Center"/>
+            
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

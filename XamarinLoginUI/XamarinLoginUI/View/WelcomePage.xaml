@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinLoginUI.UI.Renderers"
+             BackgroundImageSource="background"
+             x:Class="XamarinLoginUI.View.WelcomePage">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout HorizontalOptions="Center" 
+                         VerticalOptions="Center">
+                <Label Text="Hey, welcome to"
+                   FontFamily="CustomFont"
+                   FontSize="30" />
+
+
+                <Label Text="TravelGo!"
+                   FontFamily="CustomFont2"
+                   FontSize="60" />
+
+            </StackLayout>
+
+            <local:PersonalButton Text="Start!"
+                                  Command="{Binding StartButton}"
+                                  TextColor="#B9B9B9" VerticalOptions="End" Margin="20,0,20,50"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
